@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>Square Calculator</h2>
+23ACS20 — Full Stack Development–II Laboratory Manual
+Page 6
+  <input id="num" type="number" placeholder="Enter a number">
+  <button id="squareBtn">Find Square</button>
+  <p id="result"></p>
+  <script>
+    document.getElementById("squareBtn").addEventListener("click", () => {
+      const value = Number(document.getElementById("num").value);
+      document.getElementById("result").textContent =
+        Number.isFinite(value) ? `Square = ${value * value}` : "Enter a number";
+    });
+  </script>
+</body>
+</html>

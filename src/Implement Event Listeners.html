@@ -1,0 +1,15 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+  <button id="btn">Click Me</button>
+  <p id="msg">Waiting for an event...</p>
+  <script>
+    const btn = document.getElementById("btn");
+    const msg = document.getElementById("msg");
+    btn.addEventListener("click", () => {
+      msg.textContent = "The click event was received!";
+    });
+  </script>
+</body>
+</html>

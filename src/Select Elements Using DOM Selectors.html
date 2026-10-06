@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2 id="heading">Original Heading</h2>
+  <p class="note">First paragraph</p>
+  <p class="note">Second paragraph</p>
+  <button id="changeBtn">Change</button>
+  <script>
+    const heading = document.getElementById("heading");
+    const firstNote = document.querySelector(".note");
+    const allNotes = document.querySelectorAll(".note");
+    document.getElementById("changeBtn").addEventListener("click", () => {
+      heading.textContent = "Heading Changed";
+      firstNote.style.color = "blue";
+      allNotes.forEach(p => p.style.fontWeight = "bold");
+    });
+  </script>
+</body>
+</html>
